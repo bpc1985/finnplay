@@ -1,5 +1,5 @@
 import "./Search.scss";
-import searchIcon from "../../assets/search.png";
+import searchIcon from "assets/search.png";
 
 interface SearchProps {
   value: string;

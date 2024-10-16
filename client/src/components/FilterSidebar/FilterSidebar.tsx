@@ -1,5 +1,5 @@
 import { AlignJustify } from "lucide-react";
-import { useFilterContext } from "../../contexts/FilterContext";
+import { useFilterContext } from "contexts/FilterContext";
 import Search from "./Search";
 import Providers from "./Providers";
 import GameGroups from "./GameGroups";

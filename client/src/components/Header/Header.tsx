@@ -1,6 +1,6 @@
 import "./Header.scss";
-import logoImage from "../../assets/logo.png";
-import profileIcon from "../../assets/profile.png"; // Add this line
+import logoImage from "assets/logo.png";
+import profileIcon from "assets/profile.png"; // Add this line
 
 interface HeaderProps {
   onLogout: () => void;

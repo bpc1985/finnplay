@@ -1,4 +1,4 @@
-import GameCard from "../GameCard/GameCard";
+import GameCard from "components/GameCard/GameCard";
 import "./GameList.scss";
 
 interface Game {

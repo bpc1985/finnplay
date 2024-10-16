@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { usePostApi } from "../hooks";
+import { usePostApi } from "hooks";
 import { Eye, EyeOff, Loader } from "lucide-react";
 import "./LoginPage.scss";
 import logoImage from "../assets/logo.png";

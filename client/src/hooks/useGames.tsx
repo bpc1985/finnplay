@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo } from "react";
 import { useGetApi } from "./useApi";
-import { Game, Group, Provider, DataResponse } from "../types";
+import { Game, Group, Provider, DataResponse } from "types";
 
 interface UseGamesReturn {
   allGames: Game[];

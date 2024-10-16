@@ -1,10 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header/Header";
-import FilterSidebar from "../components/FilterSidebar/FilterSidebar";
-import GameList from "../components/GameList/GameList";
-import { FilterProvider } from "../contexts/FilterContext";
-import { useGames } from "../hooks/useGames";
-import { useLayout } from "../hooks/useLayout";
+import Header from "components/Header/Header";
+import FilterSidebar from "components/FilterSidebar/FilterSidebar";
+import GameList from "components/GameList/GameList";
+import { FilterProvider } from "contexts/FilterContext";
+import { useGames, useLayout } from "hooks";
 import "./DashboardPage.scss";
 
 const DashboardPage: React.FC = () => {

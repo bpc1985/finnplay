@@ -1,0 +1,85 @@
+@import "../../styles/variables";
+
+.filter-sidebar {
+  .columns {
+    &.filter-section {
+      margin-bottom: 2rem;
+
+      h3 {
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+        font-weight: normal;
+        color: $grey;
+      }
+    }
+
+    .custom-slider {
+      position: relative;
+      height: 24px;
+      padding: 8px 0;
+      cursor: pointer;
+      margin-left: 12px; // Align with the "Columns" label
+      width: calc(90% + 12px); // Compensate for the negative margin
+
+      --slider-percentage: 50%;
+
+      .slider-track {
+        position: absolute;
+        top: 50%;
+        left: 12px; // Offset to align with the "Columns" label
+        right: 12px;
+        height: 15px;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        transform: translateY(-50%);
+      }
+
+      .slider-progress {
+        position: absolute;
+        top: 50%;
+        left: 12px; // Offset to align with the "Columns" label
+        height: 15px;
+        background-color: #fdbc11;
+        border-radius: 4px;
+        transform: translateY(-50%);
+        width: var(--slider-percentage);
+      }
+
+      .slider-nut {
+        position: absolute;
+        top: 50%;
+        width: 28px;
+        height: 28px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        transition: background-color 0.2s ease;
+
+        &.active {
+          background-color: $yellow; // Yellow for active state
+        }
+
+        &.nut-2 {
+          background-color: $yellow; // Always yellow for number 2
+        }
+
+        &.nut-3,
+        &.nut-4 {
+          &.active {
+            background-color: $yellow; // Yellow when active
+          }
+          &:not(.active) {
+            background-color: #e0e0e0; // Grey when not active
+          }
+        }
+      }
+    }
+  }
+}

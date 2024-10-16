@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.game-list {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+
+  &.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}

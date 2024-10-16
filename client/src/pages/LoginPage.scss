@@ -1,0 +1,126 @@
+@use "sass:color";
+@import "../styles/variables";
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: $white;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+
+  .logo {
+    display: block;
+    height: 80px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+
+  fieldset {
+    position: relative;
+    border: 1px solid $lightGrey;
+    border-radius: 4px;
+    padding: 0.5rem;
+
+    &:focus-within {
+      border-color: $black;
+    }
+  }
+
+  legend {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    color: $grey;
+
+    label {
+      display: block;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+
+    &::placeholder {
+      color: color.scale($grey, $lightness: 20%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.error {
+      border-color: $red;
+    }
+  }
+
+  .error-message {
+    color: $red;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+}
+
+.password-input {
+  position: relative;
+
+  .toggle-password {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .eye-icon {
+      width: 20px;
+      height: 20px;
+      color: $grey;
+    }
+
+    &:hover .eye-icon {
+      color: color.adjust($grey, $lightness: -10%);
+    }
+  }
+}
+
+.login-button {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: $yellow;
+  color: $black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: color.adjust($yellow, $lightness: -10%);
+  }
+}
+
+.error-message {
+  color: $red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}

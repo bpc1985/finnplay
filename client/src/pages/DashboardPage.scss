@@ -1,0 +1,29 @@
+@import "../styles/variables";
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.game-content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column-reverse;
+  }
+
+  .game-content {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../styles/variables";
+
+.filter-sidebar {
+  width: 412px;
+  background-color: $white;
+  border: 1px solid $lightGrey;
+  display: flex;
+  flex-direction: column;
+
+  .search-bar {
+    padding: 1rem;
+  }
+
+  .filter-content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .filter-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+      font-size: 16px;
+      color: $grey;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: $white;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      color: $grey;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:active {
+        color: $black;
+      }
+    }
+  }
+
+  .toggle-filters-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #3f53be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid $lightGrey;
+
+    .filter-content {
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+    }
+
+    .toggle-filters-button {
+      order: 1; // This ensures the button is at the bottom
+    }
+  }
+}

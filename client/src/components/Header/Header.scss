@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: $white;
+  border-bottom: 1px solid $lightGrey;
+
+  .logo-container {
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+
+  .logout-button {
+    background: none;
+    border: none;
+    color: #ec4466;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+
+    .profile-icon {
+      width: 20px; // Adjust as needed
+      height: 20px; // Adjust as needed
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    .logo-container {
+      padding: 0.25rem;
+      margin-left: -70px;
+    }
+
+    .logout-button {
+      font-size: 0.9rem;
+
+      .profile-icon {
+        width: 18px; // Slightly smaller for mobile
+        height: 18px; // Slightly smaller for mobile
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ An application that allows users to filter games by multiple criteria. The appli
 
 ![Desktop App](https://i.imgur.com/NLiHSVw.png)
 
-![Mobile App](https://i.imgur.com/rUVo0BJ.png)
+![Mobile App](https://i.imgur.com/HfgHYqD.png)
 
 ## Installation and Setup Instructions
 
